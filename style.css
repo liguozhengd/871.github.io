@@ -1,0 +1,29 @@
+h1{
+position:left top;
+width: 30%;
+height:100%;
+margin: 0 auto;
+border-radius: 40px;
+box-shadow: 10px 10px 5px #888;
+border: 1px solid #666;
+text-align: center;
+}
+
+h1::before {
+content: "";
+background-image: url('1.jpg');
+opacity: 0.5; /* 设置透明度 */
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+z-index: -1; /* 确保背景在内容下层 */
+border-radius: 40px;
+}
+a{
+    size:10% 10%;
+}
