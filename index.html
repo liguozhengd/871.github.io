@@ -3,50 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>lgz的网站</title>
-//在这里对marked框架进行引用
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    .
-    .
-    .
-    // 在这里编写AJAX代码
-    <script>
-  function showMarkdown()
-{
-    // 获取表单变量
-    var f=form;
-    // 创建XMLHttpRequest对象
-    var xmlhttp;
-    if (window.XMLHttpRequest)
-    {
-        // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
-        xmlhttp=new XMLHttpRequest();
-    }
-    else
-    {
-        // IE6, IE5 浏览器执行代码
-        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-    }
-    
-    
-    // 得到服务器响应后，对得到的Markdown文档进行解析
-    xmlhttp.onreadystatechange=function()
-    {
-        if (xmlhttp.readyState==4 && xmlhttp.status==200)
-        {
-            // 这里调用了marked框架中的marked函数实现Markdown2HTML的解析
-            document.getElementById("content").innerHTML=marked(xmlhttp.responseText);
-        }
-    }
-    
-    
-    // 向服务器发送请求，获取你需要的Markdown文档
-    xmlhttp.open("GET",f.q.value,true);
-    xmlhttp.send();
-    }
-}
-    </script>
-    .
-
 
 
 
@@ -55,16 +11,7 @@
 <body>
     <h1>我的第一个标题</h1>
     <p>我的第一个段落。</p>
-   <div class="container" style="margin-top:30px">
-<form name="form" action="" method="post">
-    <select name="q">
-        <option class="active" alue="">选择一个笔记:</option>
-        <option value="/871.github.io/weblearning.md">第一个Markdown文档</option>
-       </select>
-    <input type="button" value="显示" onclick="showMarkdown()">
-</form>
- <div id="content"></div>
-    </div>
+
     
 <a href="/871.github.io/README.md">访问更新记录</a>
     <a href="/871.github.io/test.html">访问测试页</a>
