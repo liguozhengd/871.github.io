@@ -1,24 +1,27 @@
 body{
     background-image:url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 nav{
     display :flex;
     align-items:center;
     gap:10px;
     padding:10px 10%;
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(6, 147, 183, 0.2);
     height:30px;
 border-bottom-left-radius: 20px;
 border-bottom-right-radius: 20px;
 backdrop-filter: blur(5px);
-box-shadow: 0 2px 5px rgba(255,255,255,0.2);
+box-shadow: 0 2px 5px rgba(6, 147, 183, 0.2);
 }
 nav a{
     text-decoration-line: none;
     font-size:18px;
 font-weight: 500;
 letter-spacing: 2px;
-color:rgb(53,53,53);
+color:rgb(6, 147, 183);
 width:100px;
 text-align: center;
 padding:20px 0;
@@ -26,16 +29,16 @@ cursor:pointer;
 transition:all 0.3s
 }
 .active{
-    background-color: #16423c;
+    background-color: #0a4889;
     color:white;
 
 }
 nav a:hover{
-     background-color: #16423c;
+     background-color: #0a4889;
     color:white;
 
 }
 nav:hover>a:not(:hover){
     background-color: transparent;
-    color:rgb(53,53 ,53);
+    color:rgb(6, 147, 183);
 }
