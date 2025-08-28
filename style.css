@@ -5,10 +5,10 @@ body{
     color:#fff;
     padding:3rem;
     min-block-size:100vh;
-    background:/*liner-gradient(#8c82a6,#3e4df6 85%) 
-    */no-repeat,
+background:/*liner-gradient(#8c82a6,#3e4df6 85%)  */
+    no-repeat,
    url('1.jpg') fixed no-repeat 
-   center / cover;
+   center / cover; 
  
     /* background-blend-mode: soft-light; */
     position:relative;
@@ -30,7 +30,7 @@ nav a{
     font-size:18px;
 font-weight: 500;
 letter-spacing: 2px;
-color:rgb(6, 147, 183);
+color:rgb(2, 46, 116);
 width:100px;
 text-align: center;
 padding:20px 0;
@@ -49,7 +49,7 @@ nav a:hover{
 }
 nav:hover>a:not(:hover){
     background-color: transparent;
-    color:rgb(6, 147, 183);
+    color:rgb(2, 46, 116);
 }
 @property --y{
     syntax: "<percentage>";
