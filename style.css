@@ -76,7 +76,7 @@ animation:snowfall 20s linear infinite;
 .snowfall::before{
     inset:-4rem 0 0;
     opacity:0.7;
-    animation:snowfall 27s linear infinite,
+    animation:snowfall 7s linear infinite,
     wind 27s ease-in-out infinite;
     background-size:45% 100%
     
@@ -85,7 +85,7 @@ animation:snowfall 20s linear infinite;
 .snowfall::after{
     inset:-8rem 0 0;
     opacity:0.8;
-    animation:snowfall 37s linear infinite,
+    animation:snowfall 17s linear infinite,
     wind 47s ease-in-out infinite;
     background-size: 32% 100%;
 }
@@ -127,3 +127,4 @@ span:nth-child(even){
     letter-spacing: 0;
     cursor:pointer;
 }
+
