@@ -1,0 +1,23 @@
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+height: 100vh;
+color: #fff;
+background-image: linear-gradient(125deg,#082b4e,
+#02fc87,#0672ee,#9205fd,#f83606);
+background-size: 400%;
+animation: bgmove 20s infinite;
+}
+@keyframes bgmove{
+    0%{
+        background-position: 0% 50%;
+    }
+     50%{
+        background-position: 100% 50%;
+    }
+     100%{
+        background-position: 0% 50%;
+    }
+}
