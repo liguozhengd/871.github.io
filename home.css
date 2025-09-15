@@ -1,7 +1,6 @@
 body{
 display: flex;
-justify-content: center;
-align-items: center;
+
 font-size: 30px;
 height: 100vh;
 color: #fff;
@@ -20,4 +19,46 @@ animation: bgmove 20s infinite;
      100%{
         background-position: 0% 50%;
     }
+}
+ul {
+
+    list-style-type:none;
+	margin:0;
+	padding:0;
+     position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+ 
+li a {
+    display: block;
+    color: #e5e5f6;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#yuanshen{
+    
+     position:absolute;
+    left:100px;
+    top:150px;
+
+     text-align:center;
+    color:red;
+}
+
+a
+{
+    display:block;
+    width:60px;
+}
+li{
+    float: left;
+    display: inline;
+}
+/* 鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    background-color: #555;
+    color: white;
 }
